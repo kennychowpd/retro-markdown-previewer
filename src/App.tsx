@@ -17,6 +17,8 @@ const Container = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  background-color: gray;
+  padding:20px;
 `
 
 function App() {
@@ -40,7 +42,7 @@ function App() {
           value={markdown}
           onChange={markdownChangeHandler}
         />
-        <MarkdownOutput markdown={markdown}/>
+        <MarkdownOutput markdown={markdown} />
       </Container>
     </AppContainer>
   )

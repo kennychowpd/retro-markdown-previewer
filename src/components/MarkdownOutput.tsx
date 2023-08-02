@@ -7,19 +7,24 @@ interface MarkdownOutputProps {
 }
 
 const OutputContainer = styled.div`
-  background-color: white;
-  height: 100%;
-  width: 50%;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `
-
-
+const StyledOutput = styled.div`
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+`
 
 const MarkdownOutput: FC<MarkdownOutputProps> = ({ markdown }) => {
   return (
     <OutputContainer>
-      <h2>output:</h2>
-      <ReactMarkdown>{markdown}</ReactMarkdown>
+      <h2 style={{ color: 'white' }}>output:</h2>
+      <StyledOutput>
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+      </StyledOutput>
     </OutputContainer>
   )
 }
