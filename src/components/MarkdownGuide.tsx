@@ -2,13 +2,18 @@ import { FC } from 'react'
 import { styled } from 'styled-components'
 
 interface MarkdownGuideProps {
-  guideVisibility: boolean
+  showGuide: boolean
 }
 
 const GuideContainer = styled.div`
   background-color: gray;
-  margin-top: 10px;
   padding: 10px;
+  position: absolute;
+  z-index: 10;
+  top: 75;
+  right: 0;
+  width: 300px;
+  justify-self: center;
 `
 
 const MarkdownSheet = styled.div`
@@ -18,7 +23,9 @@ const MarkdownSheet = styled.div`
 `
 
 const List = styled.ul`
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 `
 
 const markdownSyntax = [
@@ -34,8 +41,8 @@ const markdownSyntax = [
   '- list item',
 ]
 
-const MarkdownGuide: FC<MarkdownGuideProps> = ({ guideVisibility }) => {
-  return guideVisibility ? (
+const MarkdownGuide: FC<MarkdownGuideProps> = ({ showGuide }) => {
+  return showGuide ? (
     <GuideContainer>
       <MarkdownSheet>
         <h1>HI! CHEATERS.</h1>

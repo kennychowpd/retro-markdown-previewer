@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
@@ -11,7 +11,9 @@ const HeaderContainer = styled.div`
   items-align: center;
   align-items: center;
   padding-left: 20px;
-  padding-right: 20px
+  padding-right: 20px;
+  margin-bottom: 10px;
+  
 `
 
 const Title = styled.h1`
@@ -30,10 +32,10 @@ const Button = styled.button`
 `
 
 interface HeaderProps {
-  onToggleGuide: () => void;
+  onToggleGuide: () => void
 }
 
-const Header: FC<HeaderProps> = ({onToggleGuide}) => {
+const Header: FC<HeaderProps> = ({ onToggleGuide }) => {
   return (
     <HeaderContainer>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
