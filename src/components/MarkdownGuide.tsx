@@ -17,9 +17,9 @@ const GuideContainer = styled.div`
 `
 
 const MarkdownSheet = styled.div`
-  border: 2px solid white;
-  border-radius: 6px;
+  border: 4px solid white;  
   padding: 10px;
+  color: white
 `
 
 const List = styled.ul`
