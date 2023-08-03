@@ -18,7 +18,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   background-color: gray;
-  padding:20px;
+  padding:10px 20px 20px 20px;
 `
 
 function App() {

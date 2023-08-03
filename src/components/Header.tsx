@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
-  height: 57px;
+  height: 43px;
   width: 100%;
   background-color: gray;
   color: white;
@@ -13,12 +13,12 @@ const HeaderContainer = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 10px;
-  
+  padding-top: 4px
 `
 
 const Title = styled.h1`
   font-weight: bold;
-  font-size: 32px;
+  font-size: 22px;
   font-family: 'Press Start 2P';
 `
 
