@@ -29,17 +29,17 @@ const Button = styled.button`
   -webkit-border-radius: 0px;
   -webkit-appearance: none;
   &:hover {
-    background-color: 'red';
+    background-color: red;
     color: white;
   }
 `
 
 interface HeaderProps {
-  showGuides: boolean
+  showGuide: boolean
   onToggleGuide: () => void
 }
 
-const Header: FC<HeaderProps> = ({ showGuides, onToggleGuide }) => {
+const Header: FC<HeaderProps> = ({ showGuide, onToggleGuide }) => {
   return (
     <HeaderContainer>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -49,7 +49,7 @@ const Header: FC<HeaderProps> = ({ showGuides, onToggleGuide }) => {
       <Button
         onClick={onToggleGuide}
         style={
-          showGuides
+          showGuide
             ? { backgroundColor: 'red', color: 'white' }
             : { backgroundColor: '', color: '' }
         }
