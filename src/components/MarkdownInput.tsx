@@ -27,6 +27,9 @@ const StyledTextArea = styled.textarea`
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
 `
 
 const MarkdownInput: FC<MarkdownInputProps> = ({ value, onChange }) => {
