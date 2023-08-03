@@ -25,6 +25,9 @@ const Title = styled.h1`
 const Button = styled.button`
   padding: 2px;
   font-size: 16px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
   &:hover {
     background-color: red;
     color: white;

@@ -18,7 +18,7 @@ const StyledTextArea = styled.textarea`
   height: 100%;
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 24px;
   font-style: bold;
   border: none;
   overflow: auto;
