@@ -10,7 +10,7 @@ const GuideContainer = styled.div`
   padding: 10px;
   position: absolute;
   z-index: 10;
-  top: 75px;
+  top: 55px;
   right: 0;
   width: 300px;
   justify-self: center;

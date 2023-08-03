@@ -35,7 +35,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Header onToggleGuide={onToggleGuide} />
+      <Header onToggleGuide={onToggleGuide} showGuide={showGuide} />
       <MarkdownGuide showGuide={showGuide} />
       <Container>
         <MarkdownInput

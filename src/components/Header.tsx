@@ -29,23 +29,33 @@ const Button = styled.button`
   -webkit-border-radius: 0px;
   -webkit-appearance: none;
   &:hover {
-    background-color: red;
+    background-color: 'red';
     color: white;
   }
 `
 
 interface HeaderProps {
+  showGuides: boolean
   onToggleGuide: () => void
 }
 
-const Header: FC<HeaderProps> = ({ onToggleGuide }) => {
+const Header: FC<HeaderProps> = ({ showGuides, onToggleGuide }) => {
   return (
     <HeaderContainer>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Title>Markdown</Title>
         <Title>Previewer</Title>
       </div>
-      <Button onClick={onToggleGuide}>Cheat Sheet</Button>
+      <Button
+        onClick={onToggleGuide}
+        style={
+          showGuides
+            ? { backgroundColor: 'red', color: 'white' }
+            : { backgroundColor: '', color: '' }
+        }
+        >
+        Cheat Sheet
+      </Button>
     </HeaderContainer>
   )
 }
