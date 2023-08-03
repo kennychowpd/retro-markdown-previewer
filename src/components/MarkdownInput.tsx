@@ -10,7 +10,7 @@ const InputContainer = styled.div`
   flex-direction: column;
   background-color: gray;
   height: 100%;
-  width: 50%;
+  width: 100%;
   padding-right: 20px;
 `
 
@@ -18,7 +18,7 @@ const StyledTextArea = styled.textarea`
   height: 100%;
   width: 100%;
   padding: 10px;
-  font-size: 24px;
+  font-size: 16px;
   font-style: bold;
   border: none;
   overflow: auto;
