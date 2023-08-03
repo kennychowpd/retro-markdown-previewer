@@ -13,7 +13,7 @@ const HeaderContainer = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 10px;
-  padding-top: 4px
+  padding-top: 4px;
 `
 
 const Title = styled.h1`
@@ -28,10 +28,6 @@ const Button = styled.button`
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -webkit-appearance: none;
-  &:hover {
-    background-color: red;
-    color: white;
-  }
 `
 
 interface HeaderProps {
@@ -52,8 +48,7 @@ const Header: FC<HeaderProps> = ({ showGuide, onToggleGuide }) => {
           showGuide
             ? { backgroundColor: 'red', color: 'white' }
             : { backgroundColor: '', color: '' }
-        }
-        >
+        }>
         Cheat Sheet
       </Button>
     </HeaderContainer>

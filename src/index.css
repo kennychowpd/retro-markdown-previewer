@@ -5,3 +5,15 @@
   font-family:'VT323', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+@media (hover: hover) {
+    button:hover {
+      background-color: red;
+      color: white;
+    }
+  };
+  @media (hover: none) {
+    button:active {
+      background-color: red;
+      color: white;
+    }
+  };
